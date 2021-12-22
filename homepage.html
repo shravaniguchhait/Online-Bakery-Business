@@ -1,0 +1,103 @@
+
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+
+<div class="container">
+<img src="{{url_for('static', filename= 'bakery store.png')}}" alt="Bakery store" style="width:100%;">
+<div class="content">
+
+</div>
+</div>
+
+
+
+<div class="row">
+<h2> Featured Products: </h2>
+<hr>
+<div class="column">
+<img src="{{url_for('static', filename='chocoholic cake.png')}}" alt="Chocoholic Cake" style="width:100%">
+<div class ="middle">
+<a class ="active" href ="#default">
+<img src="{{url_for('static', filename= 'Shopping.png')}}" alt = "Shopping Cart " style="width:25%">
+</a>
+</div>
+<p><b>Chocoholic cake</b> </p>
+<p><b>Rs.675</b> </p>
+</div>
+
+
+
+<div class="column">
+<img src="{{url_for('static', filename= 'New York Style Baked Cheesecake.png')}}" alt="New York Style Baked Cheesecake" style="width:100%">
+<div class ="middle">
+<a class ="active" href ="#default">
+    <img src="{{url_for('static', filename= 'Shopping.png')}}" alt = "Shopping Cart " style="width:25%">
+</a>
+</div>
+<p><b>New York Style Baked Cheesecake</b></p>
+<p><b> Rs.725</b> </p>
+</div>
+
+
+
+<div class="column">
+<img src="{{url_for('static', filename= 'Harry Potter Cupcakes.png')}}" alt="Harry Potter cupcakes" style="width:100%">
+<div class ="middle">
+<a class ="active" href ="#default">
+<img src="{{url_for('static', filename= 'Shopping.png')}}" alt = "Shopping Cart " style="width:25%">
+</a>
+</div>
+<p><b>Harry Potter Cupcakes (Pack of 6)</b></p>
+<p><b> Rs.700 </b></p>
+</div>
+
+
+
+<div class="column">
+<img src="{{url_for('static', filename= 'Strawberry Cupcakes (Pack of 6).png')}}" alt="Strawberry Cupcakes (Pack of 6)" style="width:100%">
+<div class ="middle">
+<a class ="active" href ="#default">
+<img src="{{url_for('static', filename= 'Shopping.png')}}" alt = "Shopping Cart " style="width:25%">
+</a>
+</div>
+<p><b>Butterscotch Cake</b></p>
+<p> <b>Rs.530 </b></p>
+</div>
+
+<div class="column">
+    <img src="{{url_for('static', filename= 'berry smoothie.jpeg')}}"alt="fuen" style="width:100%">
+    <div class ="middle">
+    <a class ="active" href ="#default">
+    <img src="{{url_for('static', filename= 'Shopping.png')}}" alt = "Shopping Cart " style="width:25%">
+    </a>
+    </div>
+    <p><b>Berry Smoothie</b></p>
+    <p><b>Rs.150</b></p>
+    </div>
+
+
+</div>
+
+
+<h1>Our Instagram Feed</h1>
+
+<div class="embedsocial-hashtag" data-ref="94752fc92ed154e953a0d15a5460cc05e6e548ab"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script>
+
+
+
+
+
+
+<div class="row">
+<h1>Location</h1>
+<p>Bake My Day Bakery, Opp. Kanchanjunga building, Anushakti Nagar,Mumbai-400094</p>
+
+
+<h1>Hours</h1>
+<p>Weekdays:9am-8pm</p>
+<p>Weekends:9am-11pm</p>
+</div>
+</div>
+
+{% endblock %}

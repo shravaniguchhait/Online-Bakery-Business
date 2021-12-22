@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    }
+    
+    
+    
+    .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+    
+    
+    
+    .closebtn:hover {
+    color: black;
+    }
+    </style>
+</head>
+<body>
+<h2>Get in touch!</h2>
+<div class="row">
+<div class="column">
+<img src="{{url_for('static', filename= 'address.png')}}"  alt="Location" style="width:100%">
+<p><b>Bake My Day Bakery, Opp. Kanchanjunga building, Anushakti Nagar,Mumbai-400094</b> </p>
+</div>
+
+
+
+<div class="column">
+<img src="{{url_for('static', filename= 'call us.png')}}"  alt="Call" style="width:100%">
+<p><b>+91 9136225702</b> </p>
+<p><b>+91 9869441160</b> </p>
+</div>
+
+
+
+<div class="column">
+<img src="{{url_for('static', filename= 'mail.png')}}" alt="Email" style="width:100%">
+<p><b> bakemydaybakery@gmail.com </b></p>
+</div>
+
+
+
+<div class="column">
+<img src="{{url_for('static', filename= 'business hours.png')}}"  alt="Business Hours" style="width:100%">
+<p> <b>Business Hours </b></p>
+<p>Weekdays::9am-8pm</p>
+<p>Weekends:9am-11pm</p>
+</div>
+
+<div class="column">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.580698310502!2d72.9168320147282!3d19.038189558107543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5e125e06cfd%3A0x149a91caf030c20f!2sKailash%20Apartment%2C%20Vidhyarthi%20Marg%2C%20Anushakti%20Nagar%2C%20Mumbai%2C%20Maharashtra%20400094!5e0!3m2!1sen!2sin!4v1637526885744!5m2!1sen!2sin" width="200" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+
+
+<br><br><br>
+<div class="container">
+<h3>Enquiry Form</h3>
+<form action="/action_page.php">
+<label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+
+<label for="lname">Last Name</label>
+<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+<label for="eid">Email</label>
+<input type="email" id="eid" name="email" placeholder="Email Id">
+
+
+
+<br><br>
+
+
+
+<label for="Message ">Subject</label>
+<textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+
+
+
+<input type="submit" value="SEND">
+
+
+
+</form>
+
+
+
+{% endblock %}
